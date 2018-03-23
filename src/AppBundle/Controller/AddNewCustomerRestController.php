@@ -28,7 +28,7 @@ class AddNewCustomerRestController extends FOSRestController {
          */
         $logger = $this->get('logger');
         try {
-       $user = $this->container->get('security.token_storage')->getToken()->getUser();dump($user);die;
+       $user = $this->container->get('security.token_storage')->getToken()->getUser();
             $logger->info("BankRestController:postAddingCustomerAction-> process to create new customer");
             $view = $this->view(null, 200);
             $json = $request->request->all();
