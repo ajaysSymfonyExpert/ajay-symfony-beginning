@@ -1,0 +1,11 @@
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/4.1/phpunit.xsd"
+         backupGlobals="false"
+         colors="true"
+         bootstrap="autoload.php"
+         failOnRisky="true"
+         failOnWarning="true">
+    <php>
+        <server name="KERNEL_DIR" value="/app" />
+    </php>
+</phpunit>

@@ -1,0 +1,10 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: 127.0.0.1 
+    database_port: 3306
+    database_name: n4jcd4vjzk5i7uiv
+    database_user: test_user
+    database_password: test_user_password
+    jms_serializer.camel_case_naming_strategy.class: JMS\Serializer\Naming\IdenticalPropertyNamingStrategy
+    secret: newsecret
+    locale: en

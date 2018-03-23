@@ -1,0 +1,10 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     rest
+    #schemes:  [https]
+bank_customer:
+    path:      transactions/{customerId}/{transactionId}
+    defaults:  { _controller: AppBundle:GetTransactionByIdRest:Transaction }
+bank_customer_filter:
+    path:      transactions/{customerId}/{amount}/{date}/{offset}/{limit}
+    defaults:  { _controller: AppBundle:GetTransactionByFilterRest:Transaction }
