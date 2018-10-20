@@ -17,7 +17,6 @@ use JMS\Serializer\Annotation as JMS;
 class Customer {
 
     public function __construct() {
-        // $this->emails = new   ArrayCollection();
     }
 
     /**
