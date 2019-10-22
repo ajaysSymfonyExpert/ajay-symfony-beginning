@@ -17,9 +17,9 @@ pipelines:
           - docker-php-ext-install pdo_mysql
           - export SYMFONY_ENV=test
           - export API_KEY=1f994c8c-f871-e162-a990-569f4c568f07
-          - export crmurl='http://crm.planet-ride.com/service/v4_1/rest.php'
-          - export crmpassword=KOq2ld%54IDmFQ8W
-          - export crmusername=service_pandora
+          - export crmurl=
+          - export crmpassword=
+          - export crmusername=
           - composer install --no-scripts
           - echo "#nothing here" > ./app/config/parameters.yml
           - php bin/console doctrine:schema:update --force
@@ -31,7 +31,7 @@ definitions:
         mysql: 
           image: mysql 
           environment: 
-            MYSQL_DATABASE: 'n4jcd4vjzk5i7uiv'
+            MYSQL_DATABASE: ''
             MYSQL_RANDOM_ROOT_PASSWORD: 'yes' 
             MYSQL_USER: 'test_user'
             MYSQL_PASSWORD: 'test_user_password'
